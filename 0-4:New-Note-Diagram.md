@@ -27,7 +27,7 @@ sequenceDiagram
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
-    server-->>browser: [{"content": "Add a new point", "date": "2025-03-16T16:31:23.837Z"...},
+    server-->>browser: [{"content": "Add a new point", "date": "2025-03-16T16:31:23.837Z"}, ...]
     deactivate server
 
     Note right of browser: The browser executes the callback function that renders the notes
