@@ -3,6 +3,8 @@ sequenceDiagram
     participant browser
     participant server
 
+    Note right of browser: The user clicks the Save button
+
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     server-->>browser: HTTP Status Code: 302 Found (URL redirect to /exampleapp/notes)
